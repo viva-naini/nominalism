@@ -20,58 +20,57 @@
       <div class="header-title">viva</div>
       <hr class="header-line" />
       <div class="centerpiece">
-        <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-          <!-- Structural frames -->
-          <g stroke="#000" fill="none">
-            <rect x="50" y="50" width="700" height="500" class="thick"/>
-            <line x1="50" y1="150" x2="750" y2="150" class="medium"/>
-            <line x1="50" y1="300" x2="750" y2="300" class="medium"/>
-            <line x1="50" y1="450" x2="750" y2="450" class="medium"/>
-            <line x1="200" y1="50" x2="200" y2="550" class="medium"/>
-            <line x1="400" y1="50" x2="400" y2="550" class="medium"/>
-            <line x1="600" y1="50" x2="600" y2="550" class="medium"/>
-          </g>
-        
-          <!-- Organic curves and sections -->
-          <path d="M200,150 C250,130 350,170 400,150 S550,190 600,170" stroke="#000" fill="none" class="fine"/>
-          <path d="M200,300 C260,280 340,320 400,300 S540,340 600,320" stroke="#000" fill="none" class="fine"/>
-          <path d="M200,450 C270,420 330,480 400,450 S530,490 600,470" stroke="#000" fill="none" class="fine"/>
-        
-          <!-- Hatching for depth & shading -->
-          <g stroke="#000" class="fine">
-            <line x1="55" y1="55" x2="745" y2="55"/>
-            <line x1="55" y1="60" x2="745" y2="60"/>
-            <line x1="55" y1="65" x2="745" y2="65"/>
-            <line x1="55" y1="70" x2="745" y2="70"/>
-            <line x1="55" y1="75" x2="745" y2="75"/>
-            <line x1="55" y1="500" x2="745" y2="500"/>
-            <line x1="55" y1="505" x2="745" y2="505"/>
-            <line x1="55" y1="510" x2="745" y2="510"/>
-            <line x1="55" y1="515" x2="745" y2="515"/>
-            <line x1="55" y1="520" x2="745" y2="520"/>
-          </g>
-        
-          <!-- Accent arrows & notations -->
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
-                    markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
-            </marker>
-          </defs>
-          <line x1="400" y1="50" x2="500" y2="10" stroke="#000" class="fine" marker-end="url(#arrow)"/>
-          <text x="510" y="15" font-family="Helvetica, Arial" font-size="14">Cantilevered slab</text>
-        
-          <line x1="200" y1="550" x2="100" y2="590" stroke="#000" class="fine" marker-end="url(#arrow)"/>
-          <text x="110" y="595" font-family="Helvetica, Arial" font-size="14">Curved wall section</text>
-        
-          <!-- Rendered nodes & joints -->
-          <circle cx="200" cy="150" r="4" fill="#000"/>
-          <circle cx="400" cy="150" r="4" fill="#000"/>
-          <circle cx="600" cy="150" r="4" fill="#000"/>
-          <circle cx="200" cy="450" r="4" fill="#000"/>
-          <circle cx="400" cy="450" r="4" fill="#000"/>
-          <circle cx="600" cy="450" r="4" fill="#000"/>
-        </svg>     
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- outer walls/body solids -->
+  <g fill="none" stroke-linecap="square">
+    <path d="M50 800 V100 H1150 V800 Z" class="heavy"/>
+    <!-- vertical core walls -->
+    <line x1="300" y1="100" x2="300" y2="800" class="heavy"/>
+    <line x1="600" y1="100" x2="600" y2="800" class="heavy"/>
+    <line x1="900" y1="100" x2="900" y2="800" class="heavy"/>
+  </g>
+
+  <!-- floor slabs -->
+  <g stroke-linecap="butt" fill="none">
+    <line x1="50" y1="250" x2="1150" y2="250" class="medium"/>
+    <line x1="50" y1="450" x2="1150" y2="450" class="medium"/>
+    <line x1="50" y1="650" x2="1150" y2="650" class="medium"/>
+  </g>
+
+  <!-- hatching on cut surfaces -->
+  <g class="hatch">
+    <!-- left wall hatch -->
+    <path d="M50 150 H300" />
+    <path d="M50 160 H300" />
+    <path d="M50 170 H300" />
+    <!-- right wall hatch -->
+    <path d="M900 700 H1150" />
+    <path d="M900 710 H1150" />
+    <path d="M900 720 H1150" />
+    <path d="M900 730 H1150" />
+  </g>
+
+  <!-- structural beams & secondary lines -->
+  <g class="medium">
+    <line x1="300" y1="250" x2="600" y2="200"/>
+    <line x1="600" y1="450" x2="900" y2="400"/>
+    <line x1="300" y1="650" x2="600" y2="600"/>
+  </g>
+
+  <!-- perspective interior rails -->
+  <g stroke="#000" fill="none" stroke-linecap="round">
+    <path d="M300,250 L600,300 L900,250" class="fine"/>
+    <path d="M300,450 L600,500 L900,450" class="fine"/>
+    <path d="M300,650 L600,700 L900,650" class="fine"/>
+  </g>
+
+  <!-- human silhouette figures -->
+  <g class="figure">
+    <circle cx="350" cy="240" r="5"/>
+    <circle cx="650" cy="500" r="5"/>
+    <circle cx="950" cy="650" r="5"/>
+  </g>
+</svg>
       </div>
     </main>
   </div>
