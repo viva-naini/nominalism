@@ -20,20 +20,58 @@
       <div class="header-title">viva</div>
       <hr class="header-line" />
       <div class="centerpiece">
-        <svg class="center-art" viewBox="0 0 480 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="#111" stroke-width="1">
-            <!-- Example parametric art, placeholder for future replacement -->
-            <path d="M40,110 Q240,10 440,110 Q240,210 40,110 Z" fill="none"/>
-            <path d="M60,110 Q240,30 420,110 Q240,190 60,110 Z" fill="none"/>
-            <path d="M80,110 Q240,50 400,110 Q240,170 80,110 Z" fill="none"/>
-            <path d="M100,110 Q240,70 380,110 Q240,150 100,110 Z" fill="none"/>
-            <path d="M120,110 Q240,90 360,110 Q240,130 120,110 Z" fill="none"/>
-            <ellipse cx="240" cy="110" rx="180" ry="80" fill="none"/>
-            <ellipse cx="240" cy="110" rx="140" ry="60" fill="none"/>
-            <ellipse cx="240" cy="110" rx="100" ry="40" fill="none"/>
-            <ellipse cx="240" cy="110" rx="60" ry="20" fill="none"/>
+        <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+          <!-- Structural frames -->
+          <g stroke="#000" fill="none">
+            <rect x="50" y="50" width="700" height="500" class="thick"/>
+            <line x1="50" y1="150" x2="750" y2="150" class="medium"/>
+            <line x1="50" y1="300" x2="750" y2="300" class="medium"/>
+            <line x1="50" y1="450" x2="750" y2="450" class="medium"/>
+            <line x1="200" y1="50" x2="200" y2="550" class="medium"/>
+            <line x1="400" y1="50" x2="400" y2="550" class="medium"/>
+            <line x1="600" y1="50" x2="600" y2="550" class="medium"/>
           </g>
-        </svg>
+        
+          <!-- Organic curves and sections -->
+          <path d="M200,150 C250,130 350,170 400,150 S550,190 600,170" stroke="#000" fill="none" class="fine"/>
+          <path d="M200,300 C260,280 340,320 400,300 S540,340 600,320" stroke="#000" fill="none" class="fine"/>
+          <path d="M200,450 C270,420 330,480 400,450 S530,490 600,470" stroke="#000" fill="none" class="fine"/>
+        
+          <!-- Hatching for depth & shading -->
+          <g stroke="#000" class="fine">
+            <line x1="55" y1="55" x2="745" y2="55"/>
+            <line x1="55" y1="60" x2="745" y2="60"/>
+            <line x1="55" y1="65" x2="745" y2="65"/>
+            <line x1="55" y1="70" x2="745" y2="70"/>
+            <line x1="55" y1="75" x2="745" y2="75"/>
+            <line x1="55" y1="500" x2="745" y2="500"/>
+            <line x1="55" y1="505" x2="745" y2="505"/>
+            <line x1="55" y1="510" x2="745" y2="510"/>
+            <line x1="55" y1="515" x2="745" y2="515"/>
+            <line x1="55" y1="520" x2="745" y2="520"/>
+          </g>
+        
+          <!-- Accent arrows & notations -->
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+                    markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+            </marker>
+          </defs>
+          <line x1="400" y1="50" x2="500" y2="10" stroke="#000" class="fine" marker-end="url(#arrow)"/>
+          <text x="510" y="15" font-family="Helvetica, Arial" font-size="14">Cantilevered slab</text>
+        
+          <line x1="200" y1="550" x2="100" y2="590" stroke="#000" class="fine" marker-end="url(#arrow)"/>
+          <text x="110" y="595" font-family="Helvetica, Arial" font-size="14">Curved wall section</text>
+        
+          <!-- Rendered nodes & joints -->
+          <circle cx="200" cy="150" r="4" fill="#000"/>
+          <circle cx="400" cy="150" r="4" fill="#000"/>
+          <circle cx="600" cy="150" r="4" fill="#000"/>
+          <circle cx="200" cy="450" r="4" fill="#000"/>
+          <circle cx="400" cy="450" r="4" fill="#000"/>
+          <circle cx="600" cy="450" r="4" fill="#000"/>
+        </svg>     
       </div>
     </main>
   </div>
