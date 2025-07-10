@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC - BRUTALIST PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">MUSIC</h1>
+            <div class="terminal-line">> Digital soundscapes and experimental audio</div>
+        </header>
+
+        <nav class="navigation">
+            <div class="nav-grid">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-number">01</span>
+                    <span class="nav-text">HOME</span>
+                </a>
+                <a href="projects.html" class="nav-item">
+                    <span class="nav-number">02</span>
+                    <span class="nav-text">PROJECTS</span>
+                </a>
+                <a href="images.html" class="nav-item">
+                    <span class="nav-number">03</span>
+                    <span class="nav-text">IMAGES</span>
+                </a>
+                <a href="thoughts.html" class="nav-item">
+                    <span class="nav-number">04</span>
+                    <span class="nav-text">THOUGHTS</span>
+                </a>
+                <a href="music.html" class="nav-item active">
+                    <span class="nav-number">05</span>
+                    <span class="nav-text">MUSIC</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <section class="music-intro">
+                <h2 class="section-title">AUDIO EXPERIMENTS</h2>
+                <p class="terminal-line">> Experimental music, glitch sounds, and digital compositions</p>
+            </section>
+
+            <section class="music-player">
+                <div class="player-container">
+                    <div class="player-header">
+                        <h3 class="player-title">NOW PLAYING</h3>
+                        <div class="player-controls">
+                            <button class="control-btn" id="prev-btn">⏮</button>
+                            <button class="control-btn" id="play-btn">▶</button>
+                            <button class="control-btn" id="next-btn">⏭</button>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <div class="track-title">GLITCH SYMPHONY #001</div>
+                        <div class="track-artist">BRUTALIST AUDIO</div>
+                        <div class="track-duration">03:42</div>
+                    </div>
+                    <div class="player-visualizer">
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                        <div class="visualizer-bar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="music-tracks">
+                <h3 class="section-title">TRACKS</h3>
+                <div class="tracks-grid">
+                    <div class="track-item" data-track="glitch-symphony-001">
+                        <div class="track-info">
+                            <div class="track-number">01</div>
+                            <div class="track-details">
+                                <div class="track-name">GLITCH SYMPHONY #001</div>
+                                <div class="track-genre">Experimental / Glitch</div>
+                            </div>
+                            <div class="track-length">03:42</div>
+                        </div>
+                        <button class="play-track-btn">▶</button>
+                    </div>
+
+                    <div class="track-item" data-track="digital-noise-1337">
+                        <div class="track-info">
+                            <div class="track-number">02</div>
+                            <div class="track-details">
+                                <div class="track-name">DIGITAL NOISE #1337</div>
+                                <div class="track-genre">Noise / Industrial</div>
+                            </div>
+                            <div class="track-length">05:23</div>
+                        </div>
+                        <button class="play-track-btn">▶</button>
+                    </div>
+
+                    <div class="track-item" data-track="chaos-theory-666">
+                        <div class="track-info">
+                            <div class="track-number">03</div>
+                            <div class="track-details">
+                                <div class="track-name">CHAOS THEORY #666</div>
+                                <div class="track-genre">Ambient / Drone</div>
+                            </div>
+                            <div class="track-length">08:15</div>
+                        </div>
+                        <button class="play-track-btn">▶</button>
+                    </div>
+
+                    <div class="track-item" data-track="binary-beats-101">
+                        <div class="track-info">
+                            <div class="track-number">04</div>
+                            <div class="track-details">
+                                <div class="track-name">BINARY BEATS #101</div>
+                                <div class="track-genre">IDM / Breakbeat</div>
+                            </div>
+                            <div class="track-length">04:37</div>
+                        </div>
+                        <button class="play-track-btn">▶</button>
+                    </div>
+
+                    <div class="track-item" data-track="fractal-harmony-777">
+                        <div class="track-info">
+                            <div class="track-number">05</div>
+                            <div class="track-details">
+                                <div class="track-name">FRACTAL HARMONY #777</div>
+                                <div class="track-genre">Experimental / Jazz</div>
+                            </div>
+                            <div class="track-length">06:52</div>
+                        </div>
+                        <button class="play-track-btn">▶</button>
+                    </div>
+
+                    <div class="track-item" data-track="data-stream-999">
+                        <div class="track-info">
+                            <div class="track-number">06</div>
+                            <div class="track-details">
+                                <div class="track-name">DATA STREAM #999</div>
+                                <div class="track-genre">Techno / Minimal</div>
+                            </div>
+                            <div class="track-length">07:18</div>
+                        </div>
+                        <button class="play-track-btn">▶</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="music-albums">
+                <h3 class="section-title">ALBUMS</h3>
+                <div class="albums-grid">
+                    <div class="album-card">
+                        <div class="album-cover">
+                            <div class="album-title">DIGITAL CHAOS</div>
+                            <div class="album-year">2024</div>
+                        </div>
+                        <div class="album-info">
+                            <h4 class="album-name">DIGITAL CHAOS</h4>
+                            <p class="album-description">
+                                A collection of experimental electronic tracks exploring 
+                                the boundaries between order and chaos in digital sound.
+                            </p>
+                            <div class="album-tracks">12 tracks • 67:23</div>
+                            <a href="#" class="album-link">LISTEN</a>
+                        </div>
+                    </div>
+
+                    <div class="album-card">
+                        <div class="album-cover">
+                            <div class="album-title">GLITCH AESTHETICS</div>
+                            <div class="album-year">2023</div>
+                        </div>
+                        <div class="album-info">
+                            <h4 class="album-name">GLITCH AESTHETICS</h4>
+                            <p class="album-description">
+                                Intentional digital corruption and error-based composition 
+                                techniques create unique sonic landscapes.
+                            </p>
+                            <div class="album-tracks">8 tracks • 45:12</div>
+                            <a href="#" class="album-link">LISTEN</a>
+                        </div>
+                    </div>
+
+                    <div class="album-card">
+                        <div class="album-cover">
+                            <div class="album-title">BRUTALIST SOUNDS</div>
+                            <div class="album-year">2022</div>
+                        </div>
+                        <div class="album-info">
+                            <h4 class="album-name">BRUTALIST SOUNDS</h4>
+                            <p class="album-description">
+                                Raw, unprocessed audio that celebrates the harsh beauty 
+                                of digital imperfection and system noise.
+                            </p>
+                            <div class="album-tracks">15 tracks • 89:45</div>
+                            <a href="#" class="album-link">LISTEN</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="music-tools">
+                <h3 class="section-title">PRODUCTION TOOLS</h3>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <span class="tool-name">ABLETON LIVE</span>
+                        <span class="tool-usage">DAW / Sequencing</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-name">MAX/MSP</span>
+                        <span class="tool-usage">Audio Programming</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-name">PURE DATA</span>
+                        <span class="tool-usage">Visual Programming</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-name">AUDACITY</span>
+                        <span class="tool-usage">Audio Editing</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-name">PYTHON</span>
+                        <span class="tool-usage">Algorithmic Composition</span>
+                    </div>
+                    <div class="tool-item">
+                        <span class="tool-name">WEB AUDIO API</span>
+                        <span class="tool-usage">Browser-based Synthesis</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="music-stats">
+                <h3 class="section-title">AUDIO STATISTICS</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">35+</div>
+                        <div class="stat-label">TRACKS CREATED</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">ALBUMS RELEASED</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24-bit</div>
+                        <div class="stat-label">MAX QUALITY</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <span>© 2024 BRUTALIST PORTFOLIO</span>
+                <span>|</span>
+                <span>BUILT WITH RAGE AND PASSION</span>
+                <span>|</span>
+                <span>HOSTED ON GITHUB</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
